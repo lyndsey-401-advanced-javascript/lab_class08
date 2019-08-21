@@ -9,4 +9,4 @@ const mongooseOptions = {
 };
 mongoose.connect(process.env.MONGODB_URI, mongooseOptions);
 
-require('./src/app.js').start(process.env.PORT);
+require('./src/server.js/index.js').start(process.env.PORT);

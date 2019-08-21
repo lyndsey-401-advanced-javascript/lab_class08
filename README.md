@@ -1,13 +1,9 @@
 # lab_class08
 Express Routing and Connected API 
 
-# lab_class07
-APIs
-
 ## Deployment Tutorial
 
 ### Author:
-Lillian Gales
 Lyndsey Thomas
 
 ### Links and Resources
@@ -37,7 +33,7 @@ Lyndsey Thomas
 * Unit Tests: `npm run test`
 * Lint Tests: `npm run lint`
 * Assertions Made
-  * Assert that isAlive() properly returns a boolean
+  * Assertions
 * Assertions Remaining
   * ... Things I want to tests, but didn't yet.
 

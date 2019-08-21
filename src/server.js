@@ -3,11 +3,13 @@
 // 3rd Party Resources
 const express = require('express');
 const cors = require('cors');
-const morgan = require('morgan');
+const morgan = require('morgan'); //https logging middleware for node
 
 // Esoteric Resources
 const errorHandler = require( './middleware/error.js');
+//500 error path
 const notFound = require( './middleware/404.js' );
+//404 error path
 
 // Models
 // TODO: Pull these in (or create them)!
