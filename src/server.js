@@ -1,14 +1,16 @@
 'use strict';
 
 // 3rd Party Resources
+//require express framework
 const express = require('express');
+//cross origin resource sharing 
 const cors = require('cors');
-const morgan = require('morgan'); //https logging middleware for node
+//https logging middleware for node
+const morgan = require('morgan'); 
 
 
 const categoriesRouter = require('../src/lib/categories-modular');
 const productsRouter = require('./lib/products-modular');
-
 
 // Esoteric Resources
 const errorHandler = require( './middleware/error');
@@ -26,14 +28,14 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-app.use(categoriesRouter);
-app.use(productsRouter);
+app.use(categoriesRouter); 
+app.use(productsRouter); 
 
 // Catchalls
 app.use(notFound);
 app.use(errorHandler);
 
-//server starting code from today 
+
 module.exports = {};
 
 module.exportsserver = app; 

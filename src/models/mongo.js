@@ -1,6 +1,7 @@
 'use strict';
 
 /** Class representing a generic mongo model. */
+
 class Model {
 
   /**
@@ -31,6 +32,11 @@ class Model {
     let queryObject = _id ? { _id } : {};
     return this.schema.find(queryObject);
   }
+
+  //get(_id) {
+  //if (_id) return this.schema.findOne(_id);
+  //return this.schema.find({});
+  //}
 
   /**
    * Create a new record
