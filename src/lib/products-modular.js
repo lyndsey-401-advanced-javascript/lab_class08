@@ -5,13 +5,13 @@ const productsRouter = express.Router();
 
 // Models
 // TODO: Pull these in (or create them)!
-const Products = require('./models/products');
+const Products = require('../models/products');
 const products = new Products();
 
 productsRouter.get('/api/v1/products', getProducts);
-productsRouter.create('/api/v1/products', postProducts);
+productsRouter.post('/api/v1/products', postProducts);
 productsRouter.get('/api/v1/products/:id', getProduct);
-productsRouter.update('/api/v1/products/:id', putProducts);
+productsRouter.put('/api/v1/products/:id', putProducts);
 productsRouter.delete('/api/v1/products/:id', deleteProducts);
 
 

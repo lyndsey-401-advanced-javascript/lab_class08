@@ -9,8 +9,6 @@ const morgan = require('morgan'); //https logging middleware for node
 const categoriesRouter = require('../src/lib/categories-modular');
 const productsRouter = require('./lib/products-modular');
 
-app.use(categoriesRouter);
-app.use(productsRouter);
 
 // Esoteric Resources
 const errorHandler = require( './middleware/error');
@@ -28,6 +26,8 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
+app.use(categoriesRouter);
+app.use(productsRouter);
 
 // Catchalls
 app.use(notFound);

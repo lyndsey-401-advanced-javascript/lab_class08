@@ -3,14 +3,14 @@
 const express = require('express');
 const categoriesRouter = express.Router();
 
-const Categories = require('./models/categories');
+const Categories = require('../models/categories');
 const categories = new Categories();
 
 // Routes
 categoriesRouter.get('/api/v1/categories', getCategories);  //route and callback
-categoriesRouter.create('/api/v1/categories', postCategories);
+categoriesRouter.post('/api/v1/categories', postCategories);
 categoriesRouter.get('/api/v1/categories/:id', getCategory);
-categoriesRouter.update('/api/v1/categories/:id', putCategories);
+categoriesRouter.put('/api/v1/categories/:id', putCategories);
 categoriesRouter.delete('/api/v1/categories/:id', deleteCategories);
 
 // ROUTE HANDLER FUNCTIONS
