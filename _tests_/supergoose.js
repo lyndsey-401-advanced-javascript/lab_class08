@@ -1,4 +1,5 @@
 'use strict';
+
 /**
  * Combines SuperTest and Mongoose Memory Server
  * to reduce (hopefully) the pain of
