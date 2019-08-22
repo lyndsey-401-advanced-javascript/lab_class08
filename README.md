@@ -8,8 +8,9 @@ Lyndsey Thomas
 
 ### Links and Resources
 * [submission PR]()
-* [travis]()
-* [front-end]()
+* [travis](https://travis-ci.com/lyndsey-401-advanced-javascript/lab_class08/jobs/227265574) //also broken
+* [front-end](http://localhost:3000/)
+//front end totally broken and nodemon crashing, not sure why, needs to be looked at
 
 #### Documentation
 * [jsdoc]()
